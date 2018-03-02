@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<script> 
+	var name = "Dara";
+
+	var today = new Date();
+	var currentHour = today.getHours();
+
+		if (currentHour < 12) {
+			console.log("Good morning" + " " + name);
+		} else if (currentHour < 18) { 
+			console.log("Good afternoon" + " " + name);
+		} else {
+			console.log("Good evening" + " " + name);
+		}
+
+
+
+	function find_duplicate_in_array(arra1) {
+		  var i,
+		  len=arra1.length,
+		  result = [],
+		  obj = {}; 
+		  for (i=0; i<len; i++)
+		  {
+		  obj[arra1[i]]=0;
+		  }
+		  for (i in obj) {
+		  result.push(i);
+		  }
+		  return result;
+		  }
+		var arr = [1, 2, 2, 3, 4, 5, 6, 7, 8, 8, 9];
+		console.log(find_duplicate_in_array(arr));
+
+
+	// var firstName = "Dara";	
+
+
+	// function firstName () {
+	// 	var str = firstName + "lastName@gmail.com";
+	// 	var n = str.indexOf(firstName);
+	// 	console.log("n");
+	// }	
+
+
+
+	function myFunction() {
+	    var email = ["firstName," "lastName", "@", "gmail.com"];
+	    var a = email.indexOf("firstName");
+	    console.log("a");
+	    // document.getElementById("demo").innerHTML = a;
+	}
+
+
+
+
+
+	// <p id="demo"></p>
+
+
+	// function myFunction() {
+	//     var str = "Hello world, welcome to the universe.";
+	//     var n = str.indexOf("welcome");
+	//     document.getElementById("demo").innerHTML = n;
+	// }
+
+
+
+
+
+
+</script>
+
+
+</html>
